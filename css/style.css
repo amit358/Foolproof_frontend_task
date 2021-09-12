@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:400,300,700,500");
+
+* {
+    box-sizing: border-box;
+    --font-family-helvetica: "Helvetica";
+    --font-family-open_sans: "Open Sans";
+    --font-family-roboto: "Roboto";
+  }
+  body{
+    margin: 0;
+    background-color: var(--black-haze);
+  }
+
+  .container{
+      width:100%;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+/* For mobile phones: */
+ [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  .no-padding{
+    padding: 0px;
+  }
+  .no-padding-left{
+    padding-left: 0px;
+  }
+  .no-padding-right{
+    padding-right: 0px;
+  }
+  .no-margin{
+      margin:0px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    z-index: 1001;
+  }
+
+  :root {
+    --outer-space: rgba(47, 54, 62, 1);
+    --gravel: rgba(74, 73, 74, 1);
+    --salmon-pearl: rgba(233, 71, 75, 1);
+    --black-haze: rgba(246, 246, 246, 1);
+    --white: rgba(255, 255, 255, 1);
+  
+    --font-size-s: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 25px;
+    --font-size-xxxxl: 40px;
+  
+    --font-family-helvetica: "Helvetica";
+    --font-family-open_sans: "Open Sans";
+    --font-family-roboto: "Roboto";
+  }
+
+  .topbar {
+    align-items: center;
+    display: flex;
+    padding: 0 4%;
+  }
+
+.the-title {
+  color: var(--salmon-pearl);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 162px;
+  white-space: nowrap;
+}
+
+.nav{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav >li{
+    width: auto;
+    float: left;
+    padding: 15px 40px;
+
+}
+.nav>li>a{
+    color: var(--gravel);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0.30px;
+    line-height: 19px;
+    min-height: 19px;
+    min-width: 68px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.slideImg{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.banner{
+    position: relative;
+    top: -20px;
+    z-index: 1000;
+}
+.banner-content{
+    height: 400px;
+    padding: 15px;
+    background-color: var(--salmon-pearl);
+}
+
+.latest-recipe {
+  letter-spacing: 0.30px;
+  line-height: 21px;
+  min-height: 21px;
+  min-width: 133px;
+  white-space: nowrap;
+  color: var(--white);
+}
+
+
+.baked-polenta-with-c {
+  color: var(--white);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxl);
+  letter-spacing: 0.30px;
+  padding: 10px 0;
+  margin:10px 0 ;
+}
+.polenta-goat-cheese {
+  letter-spacing: 0.30px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.bt {
+  align-items: center;
+  background-image: url(rectangle-3.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 50px;
+  min-width: 169px;
+  padding: 14px 19px;
+}
+
+.go-to-recipe {
+  align-items: center;
+  background-size: 100% 100%;
+  font-family: var(--font-family-open_sans);
+  display: flex;
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-weight: 700;
+  letter-spacing: 0.13px;
+  line-height: 21px;
+  min-height: 21px;
+  min-width: 102px;
+  border: none;
+  white-space: nowrap;
+}
+
+.arrowright-346-copy-3 {
+  height: 10px;
+  margin-left: 6px;
+  margin-top: 4.0px;
+  width: 16px;
+  
+}
+
+.title {
+  color: var(--gravel);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  letter-spacing: 0.30px;
+  margin: 10px 0;
+}
+
+.food-type-section{
+  padding: 15px;
+  background-color: var(--salmon-pearl);
+}
+
+.polaroid {
+  width: 100%;
+  background-color: white;
+}
+
+ .polaroid-caption{
+  text-align: left;
+  padding: 10px 20px;
+  height: 90px;
+}
+
+.polaroid-img{
+  width:100%; 
+  height: 200px; 
+  object-fit: cover;
+}
+
+.spread{
+  background-color: var(--salmon-pearl);
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+}
+.spread-title {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  letter-spacing: 0.30px;
+  margin: 10px 0;
+}
+.footer-title {
+  font-weight: 700;
+  letter-spacing: 0.26px;
+  color: var(--gravel);
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 162px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+input[type=text],input[type=email],input[type="search"]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="search"],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: -15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn{
+  background-color: var(--white);
+  border: none;
+  color: var(--gravel);
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.toTop{
+  color: var(--salmon-pearl);
+  cursor: pointer;
+}
+
+.other {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
